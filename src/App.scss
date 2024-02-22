@@ -1,0 +1,22 @@
+$orange : #FF9F64;
+$cyan: #64FFDA;
+$cyanDark : #05cdcd;
+
+.resume-app {
+    color: white;
+    nav {
+        button {
+            background: transparent;
+            border-left: 2px solid grey;
+            cursor: pointer;
+            color: white;
+            display: block;
+            font-size: 1.2em;
+
+            &.active {
+                border-left: 2px solid $cyan;
+                //background: cyan;
+            }
+        }
+    }
+}
