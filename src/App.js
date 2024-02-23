@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { ResumeData } from './data';
-import { useState } from 'react';
+import { useState, useTransition, Suspense } from 'react';
 
 function ContentBody({data}){
   return(
@@ -23,13 +23,22 @@ function ContentBody({data}){
   )
 }
 
+function ContentBodyGlimmer(){
+  return(
+    <>Loading...</>
+  )
+}
+
 function App() {
 
+  const [isPending, startTransition] = useTransition()
   const [index,setIndex] = useState(0)
 
   function handleClick(e){
-    console.log(e.target.attributes.index)
-  setIndex(parseInt(e.target.attributes.index.value))
+    startTransition(()=>{
+      setIndex(parseInt(e.target.attributes.index.value))
+    })
+
   }
 
   return (
@@ -53,10 +62,10 @@ function App() {
             ))}
               <a
                 className='cta'
-                href="/assets/documents/Tan-Bui-Web-Developer-Designer-Resume-2024.pdf" 
+                href="/assets/documents/Tan-Bui-Web-Developer-Designer-Resume-2024.pdf"
                 target='_blank' rel="noopener noreferrer">View Full Résumé
                 </a>
-            </nav>
+          </nav>
         </div>
             <div className="col-8">
               <ContentBody data={ResumeData[index]} />
