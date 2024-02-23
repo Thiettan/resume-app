@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { ResumeData } from './data';
-import { useState, useTransition, Suspense } from 'react';
+import { useState, useTransition} from 'react';
 
 function ContentBody({data}){
   return(
@@ -20,12 +19,6 @@ function ContentBody({data}){
         })}
       </div>
     </div>
-  )
-}
-
-function ContentBodyGlimmer(){
-  return(
-    <>Loading...</>
   )
 }
 
