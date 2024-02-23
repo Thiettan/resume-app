@@ -1,21 +1,126 @@
 $orange : #FF9F64;
 $cyan: #64FFDA;
-$cyanDark : #05cdcd;
+$cyanFaded: #64ffda52;
+$cyanDark: #05cdcd;
+$grey: #C4C4C4;
+$blue: #0A192F;
+$blueLight: #102345;
+$whiteFaded: #ffffff45;
+
+$cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+
+.cta {
+    text-decoration: none;
+    color: $cyan;
+    font-weight: bold;
+    display: block;
+    padding: 0.5em 0.75em;
+    border: 1px solid $cyan;
+    border-radius: 0.5em;
+    margin-top: 2em;
+    margin-left: 1.25em;
+    width: fit-content;
+    background-color: transparent;
+    transition: $cubic;
+    &:hover, &:focus-visible {
+        outline: none;
+        box-shadow: 3px 3px 0 0 $cyan;
+        transform: translate(-4px, -4px);
+    }
+}
+
+
 
 .resume-app {
-    color: white;
+    color: $grey;
+
+    .app-header {
+        h3 {
+            color: white;
+            position: relative;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            white-space: nowrap;
+
+            &::after {
+                background-color: $grey;
+                display: block;
+                content: '';
+                position: relative;
+                width: 100%;
+                height: 1px;
+                margin-left: 1em;
+                top: 3px;
+            }
+        }
+    }
+
+    h4 {
+        color: white;
+    }
+
     nav {
         button {
-            background: transparent;
+            background-color: transparent;
+            border: none;
             border-left: 2px solid grey;
             cursor: pointer;
             color: white;
             display: block;
-            font-size: 1.2em;
-
+            font-size: 1em;
+            padding-left: 1em;
+            outline: none;
+            text-align: left;
+            transition: $cubic;
+            width: 100%;
             &.active {
-                border-left: 2px solid $cyan;
+                border-left: 3px solid $cyan;
+                color: $cyan;
+                background-color: $blueLight;
+                font-weight: 600;
                 //background: cyan;
+            }
+            &:hover {
+                background-color: $blueLight;
+                color: $cyan;
+                transition: $cubic;
+            }
+        }
+    }
+
+    .content-body {
+        a {
+            color: $cyan;
+        }
+        .year {
+            color: $grey;
+        }
+
+        ul {
+             padding-left: 1em;
+            li {
+                margin-bottom: 1em;
+                line-height: normal;
+            }
+            li::marker {
+                color: $cyan;
+              }
+        }
+
+        .skill-list {
+            .skill-item {
+                color: white;
+                border-radius: 1.5em;
+                background-color: $whiteFaded;
+                display: inline-block;
+                font-size: 0.85em;
+                margin-right: 0.5em;
+                margin-top: 0.5em;
+                padding-left: 0.75em;
+                padding-right: 0.75em;
+                padding-bottom: 0.35em;
+                padding-top: 0.25em;
             }
         }
     }

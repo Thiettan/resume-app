@@ -1,14 +1,99 @@
+.cta {
+  text-decoration: none;
+  color: #64FFDA;
+  font-weight: bold;
+  display: block;
+  padding: 0.5em 0.75em;
+  border: 1px solid #64FFDA;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  margin-left: 1.25em;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.cta:hover, .cta:focus-visible {
+  outline: none;
+  box-shadow: 3px 3px 0 0 #64FFDA;
+  transform: translate(-4px, -4px);
+}
+
 .resume-app {
+  color: #C4C4C4;
+}
+.resume-app .app-header h3 {
+  color: white;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  white-space: nowrap;
+}
+.resume-app .app-header h3::after {
+  background-color: #C4C4C4;
+  display: block;
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 1px;
+  margin-left: 1em;
+  top: 3px;
+}
+.resume-app h4 {
   color: white;
 }
 .resume-app nav button {
-  background: transparent;
+  background-color: transparent;
+  border: none;
   border-left: 2px solid grey;
   cursor: pointer;
   color: white;
   display: block;
-  font-size: 1.2em;
+  font-size: 1em;
+  padding-left: 1em;
+  outline: none;
+  text-align: left;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
 }
 .resume-app nav button.active {
-  border-left: 2px solid #64FFDA;
+  border-left: 3px solid #64FFDA;
+  color: #64FFDA;
+  background-color: #102345;
+  font-weight: 600;
+}
+.resume-app nav button:hover {
+  background-color: #102345;
+  color: #64FFDA;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.resume-app .content-body a {
+  color: #64FFDA;
+}
+.resume-app .content-body .year {
+  color: #C4C4C4;
+}
+.resume-app .content-body ul {
+  padding-left: 1em;
+}
+.resume-app .content-body ul li {
+  margin-bottom: 1em;
+  line-height: normal;
+}
+.resume-app .content-body ul li::marker {
+  color: #64FFDA;
+}
+.resume-app .content-body .skill-list .skill-item {
+  color: white;
+  border-radius: 1.5em;
+  background-color: rgba(255, 255, 255, 0.2705882353);
+  display: inline-block;
+  font-size: 0.85em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-bottom: 0.35em;
+  padding-top: 0.25em;
 }/*# sourceMappingURL=App.css.map */
