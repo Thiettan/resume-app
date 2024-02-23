@@ -28,7 +28,8 @@ function App() {
   const [index,setIndex] = useState(0)
 
   function handleClick(e){
-  setIndex(e.target.tabIndex)
+    console.log(e.target.attributes.index)
+  setIndex(parseInt(e.target.attributes.index.value))
   }
 
   return (
@@ -42,14 +43,18 @@ function App() {
             {ResumeData.map((item,i)=>(
               <button
                 className={'py-3' + (i == index ? ' active' : '')}
-                tabIndex={i} key={item.company}
+                role="tab"
+                aria-selected={(i == index ? true : false)}
+                index={i}
+                tabIndex={(i == index ? 0 : -1)}
+                key={item.company}
                 onClick={handleClick}>{item.company}
               </button>
             ))}
               <a
                 className='cta'
                 href="/assets/documents/Tan-Bui-Web-Developer-Designer-Resume-2024.pdf" 
-                target='_blank'>View Full Résumé
+                target='_blank' rel="noopener noreferrer">View Full Résumé
                 </a>
             </nav>
         </div>
