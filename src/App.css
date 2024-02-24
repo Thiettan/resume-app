@@ -18,6 +18,9 @@
   box-shadow: 3px 3px 0 0 #64FFDA;
   transform: translate(-4px, -4px);
 }
+.cta.cta-mobile {
+  display: none;
+}
 
 .resume-app {
   color: #C4C4C4;
@@ -79,7 +82,6 @@
 }
 .resume-app .content-body ul li {
   margin-bottom: 1em;
-  line-height: normal;
 }
 .resume-app .content-body ul li::marker {
   color: #64FFDA;
@@ -96,4 +98,31 @@
   padding-right: 0.75em;
   padding-bottom: 0.35em;
   padding-top: 0.25em;
+}
+
+@media (max-width: 480px) {
+  .resume-app nav {
+    display: flex;
+    margin-bottom: 2em !important;
+    max-width: 360px;
+    overflow-x: scroll;
+    margin: auto;
+    justify-content: center;
+  }
+  .resume-app nav button {
+    border: none !important;
+    padding: 0.5em !important;
+    text-align: center !important;
+  }
+  .cta {
+    display: none;
+  }
+  .cta.cta-mobile {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -27,6 +27,9 @@ $cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
         box-shadow: 3px 3px 0 0 $cyan;
         transform: translate(-4px, -4px);
     }
+    &.cta-mobile {
+        display: none;
+    }
 }
 
 
@@ -101,7 +104,6 @@ $cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
              padding-left: 1em;
             li {
                 margin-bottom: 1em;
-                line-height: normal;
             }
             li::marker {
                 color: $cyan;
@@ -124,4 +126,35 @@ $cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
             }
         }
     }
+}
+
+@media (max-width:480px) {
+    .resume-app {
+        nav {
+            display: flex;
+            margin-bottom: 2em!important;
+            max-width: 360px;
+            overflow-x: scroll;
+            margin: auto;
+            justify-content: center;
+            button {
+                border: none !important;
+                padding: 0.5em!important;
+                text-align: center!important;
+            }
+        }
+
+    }
+
+    .cta {
+        display: none;
+        &.cta-mobile {
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+}
 }

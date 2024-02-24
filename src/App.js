@@ -18,6 +18,11 @@ function ContentBody({data}){
           )
         })}
       </div>
+      <a
+                className='cta cta-mobile'
+                href="/assets/documents/Tan-Bui-Web-Developer-Designer-Resume-2024.pdf"
+                target='_blank' rel="noopener noreferrer">View Full Résumé
+                </a>
     </div>
   )
 }
@@ -40,7 +45,7 @@ function App() {
         <h3 className="mb-5 mt-1">My Experience</h3>
       </header>
       <div className="row">
-        <div className="col-4">
+        <div className="col-md-4">
           <nav className='nav-list' role="tablist">
             {ResumeData.map((item,i)=>(
               <button
@@ -60,7 +65,7 @@ function App() {
                 </a>
           </nav>
         </div>
-            <div className="col-8">
+            <div className="col-md-8">
               <ContentBody data={ResumeData[index]} />
             </div>
       </div>
