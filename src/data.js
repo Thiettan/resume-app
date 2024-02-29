@@ -1,46 +1,49 @@
-export const ResumeData = [{
+export const ResumeData = [
+    {
+        company: "Hayward",
+        url: "https://hayward.com/",
+        position: "Front-End Web Developer & Designer",
+        year: "2018 - 2022",
+        content: "",
+        bulletPoints: [
+            'Design landing pages, banners & single page applications for marketing campaigns and sales operations',
+            'Develop interactive/dynamic web components and UI handling store products, services and media using JS & JS frameworks/libraries',
+            'Draft mockups/interactive prototypes and present to VPs, Directors and XFN stakeholders',
+            'Collaborate with backend engineers, product managers and sales team to transform creative concepts to production realities',
+            'Overhauled online store and accounts portal UI/UX to improve customer shopping experience'
+        ],
+        skillsArr: [
+            'HTML', 'SASS', 'Javascript', 'React', 'REST API', 'jQuery', 'Adobe XD', 'Photoshop'
+        ]
+    }
+    ,
+    {
         company: "Freelance",
         url: "#",
         position: "Web Consultant",
         year: "2018 - Present",
-        content: "Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.",
+        content: "",
         bulletPoints: [
-            'Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more',
-            'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-            'Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders',
-            'Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship'
+            'Provide consultations on creating, launching and maintaining ecommerce sites for new business owners',
+            'Register new domains and set up new sites including home page, product pages etc.',
+            'Create branding guidelines, site themes, graphics, and product photos',
+            'Implement effective SEO practices resulting in higher results on Google'
         ],
         skillsArr: [
-            'HTML', 'Javascript', 'React', 'REST API', 'jQuery', 'NodeJS'
-        ]
-    },
-    {
-        company: "Hayward",
-        url: "#",
-        position: "Front-End Web Developer & Designer",
-        year: "2018 - 2022",
-        content: "Although Colvin is predominantly known for abstract themes that allude to pre-Hispanic symbols, this gigantic sculpture, an homage to neurosurgery, is one of her most recognizable public art pieces.",
-        bulletPoints: [
-            'Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more',
-            'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-            'Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders',
-            'Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship'
-        ],
-        skillsArr: [
-            'HTML', 'SASS', 'Javascript', 'React', 'REST API', 'jQuery', 'Salesforce'
+            'Shopify', 'WordPress', 'Google Analytics', 'HTML', 'Javascript', 'React', 'REST API', 'NodeJS'
         ]
     },
     {
         company: "Turner Syndrome Fdn.",
-        url: "#",
+        url: "https://turnersyndromefoundation.org/",
         position: "Lead Web Developer",
         year: "2017 - 2018",
-        content: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+        content: "",
         bulletPoints: [
-            'Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more',
-            'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-            'Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders',
-            'Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship'
+            'Designed and developed an entirely new site to replace outdated company site with WordPress Business Platform',
+            'Provided consultations and web solutions such as CMS, hosting and UX/UI design to company directors',
+            'Researched and implemented modern & best practices for SEO, Web Accessibility and User Experience',
+            'Provide leadership with marketing & operations team through close collaboration, knowledge shares, and mentorship'
         ],
         skillsArr: [
             'HTML', 'Javascript', 'CSS', 'PHP', 'WordPress', 'CSS'
