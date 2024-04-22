@@ -1,4 +1,11 @@
+#Resume-App-Root .cta {
+  /*         margin-top: 2em;
+  margin-left: 1.25em; */
+  text-wrap: nowrap;
+}
+
 .cta {
+  text-align: center;
   text-decoration: none;
   color: #64FFDA;
   font-weight: bold;
@@ -20,6 +27,10 @@
 }
 .cta.cta-mobile {
   display: none;
+}
+.cta .cta-icon {
+  max-width: 17.5px;
+  height: 17.5px;
 }
 
 .resume-app {
@@ -101,6 +112,12 @@
 }
 
 @media (max-width: 480px) {
+  #Resume-App-Root .cta {
+    display: none;
+  }
+  #Resume-App-Root .cta.cta-mobile {
+    display: block;
+  }
   .resume-app nav {
     display: flex;
     margin-bottom: 2em !important;
@@ -114,15 +131,23 @@
     padding: 0.5em !important;
     text-align: center !important;
   }
-  .cta {
+}
+@media screen and (max-width: 767px) {
+  #Resume-App-Root .cta.cta-mobile {
+    display: block;
+  }
+  #Resume-App-Root .cta {
     display: none;
   }
-  .cta.cta-mobile {
+  #Resume-App-Root .cta.cta-mobile {
     display: block;
     width: 100%;
     margin: auto;
     text-align: center;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+  }
+  #Resume-App-Root .content-body {
+    margin-top: 2.5em;
   }
 }/*# sourceMappingURL=App.css.map */

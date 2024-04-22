@@ -6,10 +6,18 @@ $grey: #C4C4C4;
 $blue: #0A192F;
 $blueLight: #102345;
 $whiteFaded: #ffffff45;
+$cubic : all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-$cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+#Resume-App-Root {
+    .cta {
+        /*         margin-top: 2em;
+        margin-left: 1.25em; */
+        text-wrap: nowrap;
+    }
+}
 
 .cta {
+    text-align: center;
     text-decoration: none;
     color: $cyan;
     font-weight: bold;
@@ -22,13 +30,21 @@ $cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     width: fit-content;
     background-color: transparent;
     transition: $cubic;
-    &:hover, &:focus-visible {
+
+    &:hover,
+    &:focus-visible {
         outline: none;
         box-shadow: 3px 3px 0 0 $cyan;
         transform: translate(-4px, -4px);
     }
+
     &.cta-mobile {
         display: none;
+    }
+
+    .cta-icon {
+        max-width: 17.5px;
+        height: 17.5px;
     }
 }
 
@@ -77,6 +93,7 @@ $cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
             text-align: left;
             transition: $cubic;
             width: 100%;
+
             &.active {
                 border-left: 3px solid $cyan;
                 color: $cyan;
@@ -84,6 +101,7 @@ $cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
                 font-weight: 600;
                 //background: cyan;
             }
+
             &:hover {
                 background-color: $blueLight;
                 color: $cyan;
@@ -96,18 +114,21 @@ $cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
         a {
             color: $cyan;
         }
+
         .year {
             color: $grey;
         }
 
         ul {
-             padding-left: 1em;
+            padding-left: 1em;
+
             li {
                 margin-bottom: 1em;
             }
+
             li::marker {
                 color: $cyan;
-              }
+            }
         }
 
         .skill-list {
@@ -129,32 +150,58 @@ $cubic : all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
 @media (max-width:480px) {
+
+    #Resume-App-Root {
+        .cta {
+            display: none;
+        }
+
+        .cta.cta-mobile {
+            display: block;
+        }
+    }
+
     .resume-app {
         nav {
             display: flex;
-            margin-bottom: 2em!important;
+            margin-bottom: 2em !important;
             max-width: 360px;
             overflow-x: scroll;
             margin: auto;
             justify-content: center;
+
             button {
                 border: none !important;
-                padding: 0.5em!important;
-                text-align: center!important;
+                padding: 0.5em !important;
+                text-align: center !important;
             }
         }
 
     }
-
-    .cta {
-        display: none;
-        &.cta-mobile {
-        display: block;
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-    }
 }
+
+@media screen and (max-width:767px) {
+    #Resume-App-Root {
+
+        .cta.cta-mobile {
+            display: block;
+        }
+
+        .cta {
+            display: none;
+
+            &.cta-mobile {
+                display: block;
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                margin-top: 1.5em;
+                margin-bottom: 1.5em;
+            }
+        }
+
+        .content-body {
+            margin-top: 2.5em;
+        }
+    }
 }
