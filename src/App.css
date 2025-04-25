@@ -1,17 +1,23 @@
 #Resume-App-Root .cta {
   /*         margin-top: 2em;
-  margin-left: 1.25em; */
+      margin-left: 1.25em; */
   text-wrap: nowrap;
+}
+#Resume-App-Root button:focus-visible {
+  outline: 1px solid;
+}
+#Resume-App-Root button:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .cta {
   text-align: center;
   text-decoration: none;
-  color: #64FFDA;
+  color: #64ffda;
   font-weight: bold;
   display: block;
   padding: 0.5em 0.75em;
-  border: 1px solid #64FFDA;
+  border: 1px solid #64ffda;
   border-radius: 0.5em;
   margin-top: 2em;
   margin-left: 1.25em;
@@ -22,7 +28,7 @@
 }
 .cta:hover, .cta:focus-visible {
   outline: none;
-  box-shadow: 3px 3px 0 0 #64FFDA;
+  box-shadow: 3px 3px 0 0 #64ffda;
   transform: translate(-4px, -4px);
 }
 .cta.cta-mobile {
@@ -34,7 +40,7 @@
 }
 
 .resume-app {
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 .resume-app .app-header h3 {
   color: white;
@@ -45,7 +51,7 @@
   white-space: nowrap;
 }
 .resume-app .app-header h3::after {
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   display: block;
   content: "";
   position: relative;
@@ -72,21 +78,21 @@
   width: 100%;
 }
 .resume-app nav button.active {
-  border-left: 3px solid #64FFDA;
-  color: #64FFDA;
+  border-left: 3px solid #64ffda;
+  color: #64ffda;
   background-color: #102345;
   font-weight: 600;
 }
 .resume-app nav button:hover {
   background-color: #102345;
-  color: #64FFDA;
+  color: #64ffda;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .resume-app .content-body a {
-  color: #64FFDA;
+  color: #64ffda;
 }
 .resume-app .content-body .year {
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 .resume-app .content-body ul {
   padding-left: 1em;
@@ -95,7 +101,7 @@
   margin-bottom: 1em;
 }
 .resume-app .content-body ul li::marker {
-  color: #64FFDA;
+  color: #64ffda;
 }
 .resume-app .content-body .skill-list .skill-item {
   color: white;

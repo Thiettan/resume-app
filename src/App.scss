@@ -1,207 +1,208 @@
-$orange : #FF9F64;
-$cyan: #64FFDA;
+$orange: #ff9f64;
+$cyan: #64ffda;
 $cyanFaded: #64ffda52;
 $cyanDark: #05cdcd;
-$grey: #C4C4C4;
-$blue: #0A192F;
+$grey: #c4c4c4;
+$blue: #0a192f;
 $blueLight: #102345;
 $whiteFaded: #ffffff45;
-$cubic : all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+$cubic: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 #Resume-App-Root {
-    .cta {
-        /*         margin-top: 2em;
+  .cta {
+    /*         margin-top: 2em;
         margin-left: 1.25em; */
-        text-wrap: nowrap;
-    }
+    text-wrap: nowrap;
+  }
+  button:focus-visible {
+    outline: 1px solid;
+  }
+  button:focus:not(:focus-visible) {
+    outline: none;
+  }
 }
 
 .cta {
-    text-align: center;
-    text-decoration: none;
-    color: $cyan;
-    font-weight: bold;
-    display: block;
-    padding: 0.5em 0.75em;
-    border: 1px solid $cyan;
-    border-radius: 0.5em;
-    margin-top: 2em;
-    margin-left: 1.25em;
-    width: fit-content;
-    background-color: transparent;
-    transition: $cubic;
+  text-align: center;
+  text-decoration: none;
+  color: $cyan;
+  font-weight: bold;
+  display: block;
+  padding: 0.5em 0.75em;
+  border: 1px solid $cyan;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  margin-left: 1.25em;
+  width: fit-content;
+  background-color: transparent;
+  transition: $cubic;
 
-    &:hover,
-    &:focus-visible {
-        outline: none;
-        box-shadow: 3px 3px 0 0 $cyan;
-        transform: translate(-4px, -4px);
-    }
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    box-shadow: 3px 3px 0 0 $cyan;
+    transform: translate(-4px, -4px);
+  }
 
-    &.cta-mobile {
-        display: none;
-    }
+  &.cta-mobile {
+    display: none;
+  }
 
-    .cta-icon {
-        max-width: 17.5px;
-        height: 17.5px;
-    }
+  .cta-icon {
+    max-width: 17.5px;
+    height: 17.5px;
+  }
 }
 
-
-
 .resume-app {
-    color: $grey;
+  color: $grey;
 
-    .app-header {
-        h3 {
-            color: white;
-            position: relative;
-            display: flex;
-            width: 100%;
-            align-items: center;
-            white-space: nowrap;
+  .app-header {
+    h3 {
+      color: white;
+      position: relative;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      white-space: nowrap;
 
-            &::after {
-                background-color: $grey;
-                display: block;
-                content: '';
-                position: relative;
-                width: 100%;
-                height: 1px;
-                margin-left: 1em;
-                top: 3px;
-            }
-        }
+      &::after {
+        background-color: $grey;
+        display: block;
+        content: "";
+        position: relative;
+        width: 100%;
+        height: 1px;
+        margin-left: 1em;
+        top: 3px;
+      }
+    }
+  }
+
+  h4 {
+    color: white;
+  }
+
+  nav {
+    button {
+      background-color: transparent;
+      border: none;
+      border-left: 2px solid grey;
+      cursor: pointer;
+      color: white;
+      display: block;
+      font-size: 1em;
+      padding-left: 1.5em;
+      outline: none;
+      text-align: left;
+      transition: $cubic;
+      width: 100%;
+
+      &.active {
+        border-left: 3px solid $cyan;
+        color: $cyan;
+        background-color: $blueLight;
+        font-weight: 600;
+        //background: cyan;
+      }
+
+      &:hover {
+        background-color: $blueLight;
+        color: $cyan;
+        transition: $cubic;
+      }
+    }
+  }
+
+  .content-body {
+    a {
+      color: $cyan;
     }
 
-    h4 {
+    .year {
+      color: $grey;
+    }
+
+    ul {
+      padding-left: 1em;
+
+      li {
+        margin-bottom: 1em;
+      }
+
+      li::marker {
+        color: $cyan;
+      }
+    }
+
+    .skill-list {
+      .skill-item {
         color: white;
+        border-radius: 1.5em;
+        background-color: $whiteFaded;
+        display: inline-block;
+        font-size: 0.85em;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+        padding-bottom: 0.35em;
+        padding-top: 0.25em;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #Resume-App-Root {
+    .cta {
+      display: none;
     }
 
+    .cta.cta-mobile {
+      display: block;
+    }
+  }
+
+  .resume-app {
     nav {
-        button {
-            background-color: transparent;
-            border: none;
-            border-left: 2px solid grey;
-            cursor: pointer;
-            color: white;
-            display: block;
-            font-size: 1em;
-            padding-left: 1.5em;
-            outline: none;
-            text-align: left;
-            transition: $cubic;
-            width: 100%;
+      display: flex;
+      margin-bottom: 2em !important;
+      max-width: 360px;
+      overflow-x: scroll;
+      margin: auto;
+      justify-content: center;
 
-            &.active {
-                border-left: 3px solid $cyan;
-                color: $cyan;
-                background-color: $blueLight;
-                font-weight: 600;
-                //background: cyan;
-            }
+      button {
+        border: none !important;
+        padding: 0.5em !important;
+        text-align: center !important;
+      }
+    }
+  }
+}
 
-            &:hover {
-                background-color: $blueLight;
-                color: $cyan;
-                transition: $cubic;
-            }
-        }
+@media screen and (max-width: 767px) {
+  #Resume-App-Root {
+    .cta.cta-mobile {
+      display: block;
+    }
+
+    .cta {
+      display: none;
+
+      &.cta-mobile {
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
     }
 
     .content-body {
-        a {
-            color: $cyan;
-        }
-
-        .year {
-            color: $grey;
-        }
-
-        ul {
-            padding-left: 1em;
-
-            li {
-                margin-bottom: 1em;
-            }
-
-            li::marker {
-                color: $cyan;
-            }
-        }
-
-        .skill-list {
-            .skill-item {
-                color: white;
-                border-radius: 1.5em;
-                background-color: $whiteFaded;
-                display: inline-block;
-                font-size: 0.85em;
-                margin-right: 0.5em;
-                margin-top: 0.5em;
-                padding-left: 0.75em;
-                padding-right: 0.75em;
-                padding-bottom: 0.35em;
-                padding-top: 0.25em;
-            }
-        }
+      margin-top: 2.5em;
     }
-}
-
-@media (max-width:480px) {
-
-    #Resume-App-Root {
-        .cta {
-            display: none;
-        }
-
-        .cta.cta-mobile {
-            display: block;
-        }
-    }
-
-    .resume-app {
-        nav {
-            display: flex;
-            margin-bottom: 2em !important;
-            max-width: 360px;
-            overflow-x: scroll;
-            margin: auto;
-            justify-content: center;
-
-            button {
-                border: none !important;
-                padding: 0.5em !important;
-                text-align: center !important;
-            }
-        }
-
-    }
-}
-
-@media screen and (max-width:767px) {
-    #Resume-App-Root {
-
-        .cta.cta-mobile {
-            display: block;
-        }
-
-        .cta {
-            display: none;
-
-            &.cta-mobile {
-                display: block;
-                width: 100%;
-                margin: auto;
-                text-align: center;
-                margin-top: 1.5em;
-                margin-bottom: 1.5em;
-            }
-        }
-
-        .content-body {
-            margin-top: 2.5em;
-        }
-    }
+  }
 }

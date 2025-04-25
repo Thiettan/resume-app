@@ -6,8 +6,8 @@ export const ResumeData = [
         year: "2018 - 2022",
         content: "",
         bulletPoints: [
-            'Design landing pages, banners & single page applications for marketing campaigns and sales operations',
-            'Develop interactive/dynamic web components and UI handling store products, services and media using JS & JS frameworks/libraries',
+            'Design landing pages, banners & web applications for digital marketing campaigns and sales operations across NA & Canada',
+            'Develop interactive/dynamic web components and UI for e-commerce & live services using Javascript & React',
             'Draft mockups/interactive prototypes and present to VPs, Directors and XFN stakeholders',
             'Collaborate with backend engineers, product managers and sales team to transform creative concepts to production realities',
             'Overhauled online store and accounts portal UI/UX to improve customer shopping experience'
@@ -24,13 +24,13 @@ export const ResumeData = [
         year: "2018 - Present",
         content: "",
         bulletPoints: [
-            'Provide consultations on creating, launching and maintaining ecommerce sites for new business owners',
-            'Register new domains and set up new sites including home page, product pages etc.',
-            'Create branding guidelines, site themes, graphics, and product photos',
-            'Implement effective SEO practices resulting in higher results on Google'
+            'Design, launch and maintain ecommerce/business sites using a variety of CMS (Shopify, Framer, Webflow, WordPress) depending on client needs',
+            'Create/refine branding guidelines, site themes, graphics, and product photos',
+            'Implemented SEO-friendly and user-centered designs, leading to a 40% increase in organic website traffic',
+            'Configured and optimized analytic tools to deliver actionable insights'
         ],
         skillsArr: [
-            'Shopify', 'WordPress', 'Google Analytics', 'HTML', 'Javascript', 'React', 'REST API', 'NodeJS'
+            'Shopify', 'WordPress', 'Framer', 'Google Analytics', 'HTML', 'Javascript', 'React'
         ]
     },
     {
