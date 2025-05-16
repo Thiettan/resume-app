@@ -46,7 +46,7 @@ export const ResumeData = [
             'Provide leadership with marketing & operations team through close collaboration, knowledge shares, and mentorship'
         ],
         skillsArr: [
-            'HTML', 'Javascript', 'CSS', 'PHP', 'WordPress', 'CSS'
+            'HTML', 'Javascript', 'CSS', 'PHP', 'WordPress'
         ]
     }
 ]
